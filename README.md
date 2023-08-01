@@ -7,7 +7,7 @@ Compile libraries and programs with the command
 ./do_makeall.sh
 ```
 
-Execute the dst2model inversion with the command
+Execute the inversion inside `dst2model` with the command
 
 ``` console
 ./dorun-all-qmu-bspl.sh
