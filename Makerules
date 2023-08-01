@@ -1,0 +1,27 @@
+CFLAGS=-O3
+FFLAGS-Gb=-mcmodel=medium -ffixed-line-length-none -O3
+FFLAGS=-ffixed-line-length-none -O3 -DMachinel -finit-local-zero
+FFLAGSarwen=-ffixed-line-length-none -fno-autmatic -finit-local-zero -DMachinel
+FCOMPILE = gfortran -c $(FFLAGS)
+FCOMPILESTATIC = gfortran -c $(FFLAGS) -static 
+FLINK = gfortran $(FFLAGS)
+FLINKSTATIC = gfortran $(FFLAGS) -static
+CCOMPILE = gcc -c $(CFLAGS)
+MAKE = make
+
+.f.a:
+	${FCOMPILE}  $<
+	ar rv $@ $*.o
+	rm -f $*.o
+
+.F.a:
+	${FFCOMPILE}  $<
+	ar rv $@ $*.o
+	rm -f $*.o
+
+.c.a:	
+	${CCOMPILE} $<
+	ar rv $@ $*.o
+	rm -f $*.o
+
+SOCKETLIBS =
