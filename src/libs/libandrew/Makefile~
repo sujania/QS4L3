@@ -1,0 +1,74 @@
+LIBDIR=$(HOME)/lib
+LIB = libandrew
+
+include	$(HOME)/etc/Makerules
+
+$(LIBDIR)/$(LIB).a: \
+	$(LIBDIR)/$(LIB).a(bcoff1.o) \
+	$(LIBDIR)/$(LIB).a(bffi.o) \
+	$(LIBDIR)/$(LIB).a(bffo.o) \
+	$(LIBDIR)/$(LIB).a(bffiah.o) \
+	$(LIBDIR)/$(LIB).a(bffoah.o) \
+	$(LIBDIR)/$(LIB).a(bffibs4.o) \
+	$(LIBDIR)/$(LIB).a(bffobs4.o) \
+	$(LIBDIR)/$(LIB).a(bffis.o) \
+	$(LIBDIR)/$(LIB).a(bffos.o) \
+	$(LIBDIR)/$(LIB).a(bitrv.o) \
+	$(LIBDIR)/$(LIB).a(blas.o) \
+	$(LIBDIR)/$(LIB).a(byswap.o) \
+	$(LIBDIR)/$(LIB).a(cat2s.o) \
+	$(LIBDIR)/$(LIB).a(check.o) \
+	$(LIBDIR)/$(LIB).a(chekcl.o) \
+	$(LIBDIR)/$(LIB).a(chekgl.o) \
+	$(LIBDIR)/$(LIB).a(closfl.o) \
+	$(LIBDIR)/$(LIB).a(corfac.o) \
+	$(LIBDIR)/$(LIB).a(cool2.o) \
+	$(LIBDIR)/$(LIB).a(crvecd.o) \
+	$(LIBDIR)/$(LIB).a(csubs.o) \
+	$(LIBDIR)/$(LIB).a(csveca.o) \
+	$(LIBDIR)/$(LIB).a(dofilt.o) \
+	$(LIBDIR)/$(LIB).a(datjul.o) \
+	$(LIBDIR)/$(LIB).a(fetch_dum.o) \
+	$(LIBDIR)/$(LIB).a(ffstat.o) \
+	$(LIBDIR)/$(LIB).a(fgetenv.o) \
+	$(LIBDIR)/$(LIB).a(fixrl.o) \
+	$(LIBDIR)/$(LIB).a(four2.o) \
+	$(LIBDIR)/$(LIB).a(getgnl.o) \
+	$(LIBDIR)/$(LIB).a(getunx.o) \
+	$(LIBDIR)/$(LIB).a(gpremlib.o) \
+	$(LIBDIR)/$(LIB).a(gravk.o) \
+	$(LIBDIR)/$(LIB).a(grinta.o) \
+	$(LIBDIR)/$(LIB).a(grintb.o) \
+	$(LIBDIR)/$(LIB).a(heread.o) \
+	$(LIBDIR)/$(LIB).a(indexx.o) \
+	$(LIBDIR)/$(LIB).a(istlen.o) \
+	$(LIBDIR)/$(LIB).a(juldat.o) \
+	$(LIBDIR)/$(LIB).a(krunge.o) \
+	$(LIBDIR)/$(LIB).a(lpyr.o) \
+	$(LIBDIR)/$(LIB).a(modl.o) \
+	$(LIBDIR)/$(LIB).a(loadchr.o) \
+	$(LIBDIR)/$(LIB).a(mskmdl.o) \
+	$(LIBDIR)/$(LIB).a(openfl.o) \
+	$(LIBDIR)/$(LIB).a(openfl_dum.o) \
+	$(LIBDIR)/$(LIB).a(opnfil.o) \
+	$(LIBDIR)/$(LIB).a(opnflc_cut.o) \
+	$(LIBDIR)/$(LIB).a(rcreao.o) \
+	$(LIBDIR)/$(LIB).a(rdmdl.o) \
+	$(LIBDIR)/$(LIB).a(reprema.o) \
+	$(LIBDIR)/$(LIB).a(respahx.o) \
+	$(LIBDIR)/$(LIB).a(rewtp.o) \
+	$(LIBDIR)/$(LIB).a(rfour.o) \
+	$(LIBDIR)/$(LIB).a(rfouro.o) \
+	$(LIBDIR)/$(LIB).a(rsple.o) \
+	$(LIBDIR)/$(LIB).a(rspln.o) \
+	$(LIBDIR)/$(LIB).a(seteig.o) \
+	$(LIBDIR)/$(LIB).a(soprema.o) \
+	$(LIBDIR)/$(LIB).a(splh.o) \
+	$(LIBDIR)/$(LIB).a(splhsetup.o) \
+	$(LIBDIR)/$(LIB).a(tdif.o) \
+	$(LIBDIR)/$(LIB).a(tadd.o) \
+	$(LIBDIR)/$(LIB).a(uloadch.o) \
+	$(LIBDIR)/$(LIB).a(wig0.o) \
+	$(LIBDIR)/$(LIB).a(wig2.o) 
+
+include	$(HOME)/etc/Makeranlib

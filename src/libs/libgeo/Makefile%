@@ -1,0 +1,83 @@
+LIBDIR = $(HOME)/eq/lib$(MS)
+LIB = libgeo
+
+include	$(HOME)/etc/Makerules.${MS}
+
+$(LIBDIR)/$(LIB).a: \
+	$(LIBDIR)/$(LIB).a(vabs.o) \
+	$(LIBDIR)/$(LIB).a(vmul.o) \
+	$(LIBDIR)/$(LIB).a(cvmima.o) \
+	$(LIBDIR)/$(LIB).a(tfb.o) \
+	$(LIBDIR)/$(LIB).a(curfit.o) \
+	$(LIBDIR)/$(LIB).a(simeig.o) \
+	$(LIBDIR)/$(LIB).a(ran3.o) \
+	$(LIBDIR)/$(LIB).a(cgrl.o) \
+	$(LIBDIR)/$(LIB).a(cmatinv.o) \
+	$(LIBDIR)/$(LIB).a(dcmatinv.o) \
+	$(LIBDIR)/$(LIB).a(cg.o) \
+	$(LIBDIR)/$(LIB).a(cbal.o) \
+	$(LIBDIR)/$(LIB).a(cbabk2.o) \
+	$(LIBDIR)/$(LIB).a(comqr2.o) \
+	$(LIBDIR)/$(LIB).a(comqr.o) \
+	$(LIBDIR)/$(LIB).a(corth.o) \
+	$(LIBDIR)/$(LIB).a(cdiv.o) \
+	$(LIBDIR)/$(LIB).a(pythag.o) \
+	$(LIBDIR)/$(LIB).a(csroot.o) \
+	$(LIBDIR)/$(LIB).a(genfunstartup.o) \
+	$(LIBDIR)/$(LIB).a(genfun.o) \
+	$(LIBDIR)/$(LIB).a(genfunextr.o) \
+	$(LIBDIR)/$(LIB).a(ginter.o) \
+	$(LIBDIR)/$(LIB).a(vmima.o) \
+	$(LIBDIR)/$(LIB).a(wwins.o) \
+	$(LIBDIR)/$(LIB).a(vlint.o) \
+	$(LIBDIR)/$(LIB).a(rspled.o) \
+	$(LIBDIR)/$(LIB).a(jround.o) \
+	$(LIBDIR)/$(LIB).a(butter.o) \
+	$(LIBDIR)/$(LIB).a(xmod.o) \
+	$(LIBDIR)/$(LIB).a(dxmod.o) \
+	$(LIBDIR)/$(LIB).a(tfour.o) \
+	$(LIBDIR)/$(LIB).a(blas.o) \
+	$(LIBDIR)/$(LIB).a(ahouse.o) \
+	$(LIBDIR)/$(LIB).a(asrins.o) \
+	$(LIBDIR)/$(LIB).a(sroins.o) \
+	$(LIBDIR)/$(LIB).a(bhouse.o) \
+	$(LIBDIR)/$(LIB).a(bitrv.o) \
+	$(LIBDIR)/$(LIB).a(convsp.o) \
+	$(LIBDIR)/$(LIB).a(cool2.o) \
+	$(LIBDIR)/$(LIB).a(ddabs.o) \
+	$(LIBDIR)/$(LIB).a(delaz.o) \
+	$(LIBDIR)/$(LIB).a(dfloat.o) \
+	$(LIBDIR)/$(LIB).a(dot.o) \
+	$(LIBDIR)/$(LIB).a(drsple.o) \
+	$(LIBDIR)/$(LIB).a(drspln.o) \
+	$(LIBDIR)/$(LIB).a(dspint.o) \
+	$(LIBDIR)/$(LIB).a(fixrl.o) \
+	$(LIBDIR)/$(LIB).a(float2.o) \
+	$(LIBDIR)/$(LIB).a(four2.o) \
+	$(LIBDIR)/$(LIB).a(fdotpr.o) \
+	$(LIBDIR)/$(LIB).a(fsvesq.o) \
+	$(LIBDIR)/$(LIB).a(fvclr.o) \
+	$(LIBDIR)/$(LIB).a(fvmov.o) \
+	$(LIBDIR)/$(LIB).a(fvsma.o) \
+	$(LIBDIR)/$(LIB).a(fvsma2.o) \
+	$(LIBDIR)/$(LIB).a(fvsub.o) \
+	$(LIBDIR)/$(LIB).a(instr.o) \
+	$(LIBDIR)/$(LIB).a(legndr.o) \
+	$(LIBDIR)/$(LIB).a(matinv.o) \
+	$(LIBDIR)/$(LIB).a(rfour.o) \
+	$(LIBDIR)/$(LIB).a(rfouro.o) \
+	$(LIBDIR)/$(LIB).a(rsple.o) \
+	$(LIBDIR)/$(LIB).a(rspln.o) \
+	$(LIBDIR)/$(LIB).a(spint.o) \
+	$(LIBDIR)/$(LIB).a(tfr.o) \
+	$(LIBDIR)/$(LIB).a(tfg.o) \
+	$(LIBDIR)/$(LIB).a(wier.o) \
+	$(LIBDIR)/$(LIB).a(trnslt.o) \
+	$(LIBDIR)/$(LIB).a(remavl.o) \
+	$(LIBDIR)/$(LIB).a(tapclr.o)
+
+$(LIBDIR)/$(LIB).a(genfunstartup.o): genfun.h 
+$(LIBDIR)/$(LIB).a(genfun.o): genfun.h 
+$(LIBDIR)/$(LIB).a(genfunextr.o): genfun.h 
+
+include	$(HOME)/etc/Makeranlib.${MS}
